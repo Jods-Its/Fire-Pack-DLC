@@ -78,7 +78,7 @@ namespace FirePack
                 __instance.m_ActionPickerItemDataList = FireUtils.Convert(replacement);
                 if(__instance.m_ActionPickerItemList.Count < __instance.m_ActionPickerItemDataList.Count)
                 {
-                    int HowMuchNeed = __instance.m_ActionPickerItemList.Count- __instance.m_ActionPickerItemList.Count;
+                    int HowMuchNeed = __instance.m_ActionPickerItemDataList.Count- __instance.m_ActionPickerItemList.Count;
                     GameObject Doner = __instance.m_ActionPickerItemList[__instance.m_ActionPickerItemList.Count - 1].gameObject;
                     for (int i = 0; i < HowMuchNeed; i++)
                     {
