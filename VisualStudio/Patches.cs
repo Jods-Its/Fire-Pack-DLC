@@ -105,6 +105,21 @@ namespace FirePack
                     {
                         // Storing for future use.
                         FireUtils.LastInteractedFire = F;
+                        return;
+                    } else
+                    {
+                        Campfire CF = GO.GetComponent<Campfire>();
+                        if(CF != null)
+                        {
+                            FireUtils.LastInteractedFire = CF.Fire;
+                            return;
+                        }
+                        WoodStove WS = GO.GetComponent<WoodStove>();
+                        if(WS != null)
+                        {
+                            FireUtils.LastInteractedFire = WS.Fire;
+                            return;
+                        }
                     }
                 }
             }
