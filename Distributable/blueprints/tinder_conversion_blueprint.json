@@ -1,0 +1,17 @@
+{
+    "Name": "Tinder Conversion",
+    "RequiredGear": [{"Item": "GEAR_CatTailTinder","Count": 5}],
+    "KeroseneLitersRequired": 0,
+    "GunpowderKGRequired": 0,
+    "RequiredTool": "",
+    "OptionalTools": [],
+    "RequiredCraftingLocation": "Anywhere",
+    "RequiresLitFire": false,
+    "RequiresLight": false,
+    "CraftedResult": "GEAR_Tinder",
+    "CraftedResultCount": 5,
+    "DurationMinutes": 5,
+    "CraftingAudio": "Play_HarvestingPlants",
+    "AppliedSkill" : "None",
+    "ImprovedSkill" : "None"
+}

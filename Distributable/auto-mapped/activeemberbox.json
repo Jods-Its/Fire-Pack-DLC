@@ -1,0 +1,50 @@
+{
+    "ModGenericComponent" : {
+                            "DisplayNameLocalizationId" : "GAMEPLAY_ActiveEmberBox",
+                            "DescriptionLocalizatonId" : "GAMEPLAY_ActiveEmberBoxDescription",
+                            "InventoryActionLocalizationId" : "",
+                            "WeightKG": 0.35,
+                            "DaysToDecay" : 0.2,
+                            "MaxHP" : 100,
+                            "InitialCondition" : "Perfect",
+                            "InventoryCategory" : "Firestarting",
+                            "Radial" : "None",
+                            "PickUpAudio" : "Play_TinCanPickup",
+                            "PutBackAudio" : "Play_TinCanPutDown",
+                            "StowAudio" : "Play_InventoryStow",
+                            "WornOutAudio" : "",
+                            "InspectOnPickup" : true,
+                            "InspectDistance" : 0.4,
+                            "InspectAngles" : [-16, 41, -40],
+                            "InspectOffset" : [0, -0.05, 0],
+                            "InspectScale" :  [1, 1, 1],
+                            "NormalModel" : "",
+                            "InspectModel" : ""
+    },
+    "ModFireStarterBehaviour" : {
+                                "DestroyedOnUse" : false,
+                                "NumberOfUses" : 0,
+                                "OnUseSoundEvent" : "Play_LogAddToFire",
+                                "RequiresSunLight" : false,
+                                "RuinedAfterUse" : false,
+                                "SecondsToIgniteTinder" : 5,
+                                "SecondsToIgniteTorch" : 5,
+                                "SuccessModifier" : 15,
+                                "DurationOffset" : 0
+                            },
+    "ModHarvestableBehaviour": {
+                                "Audio" : "Play_CraftingGeneric",
+                                "Minutes" : 5,
+                                "YieldCounts" : [1],
+                                "YieldNames" : ["GEAR_RecycledCan"],
+                                "RequiredToolNames" : []
+                            },
+    "ModRepairableBehaviour" : {
+                                "Audio" : "Play_CraftingGeneric",
+                                "Minutes" : 1,
+                                "Condition" : 50,
+                                "RequiredTools" : [],
+                                "MaterialNames" : ["GEAR_Charcoal"],
+                                "MaterialCounts" : [1]
+                            }
+}

@@ -1,0 +1,17 @@
+{
+    "Name": "Ember Box",
+    "RequiredGear": [{"Item": "GEAR_RecycledCan","Count": 1}, {"Item": "GEAR_Tinder","Count": 4}],
+    "KeroseneLitersRequired": 0,
+    "GunpowderKGRequired": 0,
+    "RequiredTool": "",
+    "OptionalTools": [],
+    "RequiredCraftingLocation": "Anywhere",
+    "RequiresLitFire": false,
+    "RequiresLight": false,
+    "CraftedResult": "GEAR_EmberBox",
+    "CraftedResultCount": 1,
+    "DurationMinutes": 5,
+    "CraftingAudio": "Play_CraftingGeneric",
+    "AppliedSkill" : "None",
+    "ImprovedSkill" : "None"
+}

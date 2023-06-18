@@ -1,0 +1,17 @@
+{
+    "Name": "Bow Drill",
+    "RequiredGear": [{"Item": "GEAR_Hardwood", "Count": 1},{"Item": "GEAR_GutDried", "Count": 1}, {"Item": "GEAR_Stick", "Count": 3}],
+    "KeroseneLitersRequired": 0,
+    "GunpowderKGRequired": 0,
+    "RequiredTool": "",
+    "OptionalTools": [],
+    "RequiredCraftingLocation": "Anywhere",
+    "RequiresLitFire": false,
+    "RequiresLight": false,
+    "CraftedResult": "GEAR_BowDrill",
+    "CraftedResultCount": 1,
+    "DurationMinutes": 15,
+    "CraftingAudio": "Play_CraftingWood",
+    "AppliedSkill" : "None",
+    "ImprovedSkill" : "None"
+}
