@@ -1,4 +1,5 @@
 ﻿using Il2Cpp;
+using Il2CppInterop.Runtime.InteropTypes.Arrays;
 using Il2CppRewired;
 using Il2CppTLD.UI;
 using UnityEngine;
@@ -80,7 +81,7 @@ namespace FirePack
 			return result;
 		}
 
-		internal static Il2CppSystem.Collections.Generic.List<T> Convert<T>(System.Collections.Generic.List<T> list)
+        internal static Il2CppSystem.Collections.Generic.List<T> Convert<T>(System.Collections.Generic.List<T> list)
 		{
 			Il2CppSystem.Collections.Generic.List<T> result = new Il2CppSystem.Collections.Generic.List<T>(list.Count);
 			foreach (var element in list)

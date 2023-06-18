@@ -4,6 +4,7 @@ using HarmonyLib;
 using Il2CppNodeCanvas.Framework;
 using static UnityEngine.UI.Image;
 using UnityEngine;
+using System.Linq;
 
 namespace FirePack
 {
@@ -74,12 +75,20 @@ namespace FirePack
                 List<ActionPickerItemData> replacement = FireUtils.Convert<ActionPickerItemData>(__instance.m_ActionPickerItemDataList);
                 Action act = new Action(() => FireUtils.TakeEmbers(__instance.m_ObjectInteractedWith.GetComponent<Fire>()));
                 replacement.Insert(2, new ActionPickerItemData("ico_skills_fireStarting", "GAMEPLAY_TakeEmbers", act));
-                Il2CppSystem.Collections.Generic.List<ActionPickerItemData> IlList = new Il2CppSystem.Collections.Generic.List<ActionPickerItemData>();
-                foreach (ActionPickerItemData element in replacement)
+                __instance.m_ActionPickerItemDataList = FireUtils.Convert(replacement);
+                if(__instance.m_ActionPickerItemList.Count < __instance.m_ActionPickerItemDataList.Count)
                 {
-                    IlList.Add(element);
+                    int HowMuchNeed = __instance.m_ActionPickerItemList.Count- __instance.m_ActionPickerItemList.Count;
+                    GameObject Doner = __instance.m_ActionPickerItemList[__instance.m_ActionPickerItemList.Count - 1].gameObject;
+                    for (int i = 0; i < HowMuchNeed; i++)
+                    {
+                        GameObject Clone = GameObject.Instantiate<GameObject>(Doner, Doner.transform.parent, true);
+                        if(Clone != null)
+                        {
+                            __instance.m_ActionPickerItemList.AddItem(Clone.GetComponent<ActionPickerItem>());
+                        }
+                    }
                 }
-                __instance.m_ActionPickerItemDataList = IlList;
             }
         }
         // InteractiveObjectsProcessInteraction is method that supposed to trigger once you try to click on object.
