@@ -1,6 +1,9 @@
 ﻿using Il2Cpp;
 using Il2CppTLD.Gear;
 using HarmonyLib;
+using Il2CppNodeCanvas.Framework;
+using static UnityEngine.UI.Image;
+using UnityEngine;
 
 namespace FirePack
 {
@@ -56,6 +59,53 @@ namespace FirePack
                 if (Settings.instance.noWoodMatches && __instance.name.Replace("(Clone)", "") == "GEAR_WoodMatches")
                 {
                     UnityEngine.Object.Destroy(__instance.gameObject);
+                }
+            }
+        }
+        [HarmonyPatch(typeof(Panel_ActionPicker), "EnableWithCurrentList")]
+        internal class Panel_ActionPicker_EnableWithCurrentList
+        {
+            private static void Prefix(Panel_ActionPicker __instance)
+            {
+                if (!FireUtils.IsBurningFire(__instance.m_ObjectInteractedWith) || !FireUtils.HasEmberBox())
+                {
+                    return;
+                }
+                List<ActionPickerItemData> replacement = FireUtils.Convert<ActionPickerItemData>(__instance.m_ActionPickerItemDataList);
+                Action act = new Action(() => FireUtils.TakeEmbers(__instance.m_ObjectInteractedWith.GetComponent<Fire>()));
+                replacement.Insert(2, new ActionPickerItemData("ico_skills_fireStarting", "GAMEPLAY_TakeEmbers", act));
+                Il2CppSystem.Collections.Generic.List<ActionPickerItemData> IlList = new Il2CppSystem.Collections.Generic.List<ActionPickerItemData>();
+                foreach (ActionPickerItemData element in replacement)
+                {
+                    IlList.Add(element);
+                }
+                __instance.m_ActionPickerItemDataList = IlList;
+            }
+        }
+        // InteractiveObjectsProcessInteraction is method that supposed to trigger once you try to click on object.
+        [HarmonyPatch(typeof(PlayerManager), "InteractiveObjectsProcessInteraction")]
+        internal class PlayerManager_InteractiveObjectsProcessInteraction
+        {
+            private static void Postfix(PlayerManager __instance)
+            {
+                // Cause this method does not return and does not store (at least I dont know where is it)
+                // We gotta find object we are looking at (well at least in most situations that what object we going to interact with)
+                float maxRange = __instance.ComputeModifiedPickupRange(GameManager.GetGlobalParameters().m_MaxPickupRange);
+                if (GameManager.GetPlayerManagerComponent().GetControlMode() == PlayerControlMode.InFPCinematic)
+                {
+                    maxRange = 50f;
+                }
+                GameObject GO = __instance.GetInteractiveObjectNearCrosshairs(maxRange);
+                // Found object
+                if (GO != null)
+                {
+                    Fire F = GO.GetComponent<Fire>();
+                    // Object got fire.
+                    if (F != null)
+                    {
+                        // Storing for future use.
+                        FireUtils.LastInteractedFire = F;
+                    }
                 }
             }
         }

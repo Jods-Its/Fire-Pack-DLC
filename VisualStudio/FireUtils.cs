@@ -10,6 +10,7 @@ namespace FirePack
         public static GearItem matches = Addressables.LoadAssetAsync<GameObject>("GEAR_PackMatches").WaitForCompletion().GetComponent<GearItem>();
         public static GearItem activeEmberBox = Addressables.LoadAssetAsync<GameObject>("GEAR_ActiveEmberBox").WaitForCompletion().GetComponent<GearItem>();
 		public static GameObject player = GameManager.GetPlayerObject();
+		public static Fire LastInteractedFire = null;
         internal static bool HasEmberBox()
 		{
 			GearItem emberBox = GameManager.GetInventoryComponent().GetBestGearItemWithName("GEAR_EmberBox");
@@ -26,15 +27,21 @@ namespace FirePack
 			else return false;
 		}
 
-		internal static void TakeEmbers()
+		internal static void TakeEmbers(Fire Fire)
 		{
-			//if (fire is null) return;
-			/*
-			if (!fire.m_IsPerpetual)
+			// If we got nothing here, trying to grab from last interacted.
+			if(Fire == null)
 			{
-				fire.ReduceHeatByDegrees(1);
+				Fire = LastInteractedFire;
+            }
+
+			if(Fire != null)
+			{
+                if (!Fire.m_IsPerpetual)
+                {
+                    Fire.ReduceHeatByDegrees(1);
+                }
 			}
-			*/
 			GearItem emberBox = GameManager.GetInventoryComponent().GetBestGearItemWithName("GEAR_EmberBox");
 			if (emberBox == null)
 			{
@@ -51,7 +58,7 @@ namespace FirePack
             GameAudioManager.PlaySound("Play_MatchBurnOut", player);
             GameAudioManager.PlaySound("Play_TinCanPutDown", player);
 			InterfaceManager.GetPanel<Panel_FeedFire>().ExitFeedFireInterface();
-		}
+        }
 
 		internal static System.Collections.Generic.List<T> Convert<T>(Il2CppSystem.Collections.Generic.List<T> list)
 		{
