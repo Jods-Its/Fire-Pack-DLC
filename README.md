@@ -48,3 +48,5 @@ For any doubt, question or technical support you might need, contact me throught
 
 Original mod by [ds5678](https://github.com/ds5678) and [WulfMarius](https://github.com/WulfMarius).
 
+Huge thanks to [Filigrani](https://github.com/Filigrani) for his selfless help.
+
