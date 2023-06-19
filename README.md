@@ -36,7 +36,7 @@ This mod is a rebuilt and updated version of ds5678's and WulfMarius' [Fire Pack
 
 **V.2.5.1 (Pre-DLC):**
 * Craft a bow drill, an ancient, renewable way to start fires.
-* Craft an ember box, a little can you can use to take embers from fires and transport them to star new ones.
+* Craft an ember box, a little can you can use to take embers from fires and transport them to start new ones.
 * You can now craft firelogs from tinder or charcoal, and convert cat tail heads into tinder.
 * Adds some difficulty settings for people who like challenges.
 
