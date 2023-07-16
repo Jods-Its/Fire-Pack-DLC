@@ -7,7 +7,8 @@
 		"Polish": "Pudełko na żar",
 		"Italian": "Scatola per tizzoni",
 		"Japanese": "種火入れ",
-		"Simplified Chinese": "余烬罐"
+		"Simplified Chinese": "余烬罐",
+		"Turkish": "Ateş Koru Kutusu"
 	},
 	"GAMEPLAY_EmberBoxDescription": {
 		"English": "A little can with charcoal that can be used to carry some embers.",
@@ -17,7 +18,8 @@
 		"Polish": "Mała puszka na węgiel drzewny, którą możesz użyć by transportować żar",
 		"Italian": "Una lattina contenente carbone che puo' essere usata per trasportare dei tizzoni.",
 		"Japanese": "種火を持ち運ぶために使える木炭入の小さい缶。",
-		"Simplified Chinese": "一个装有木炭的小罐子，可以用来装一些余烬。"
+		"Simplified Chinese": "一个装有木炭的小罐子，可以用来装一些余烬。",
+		"Turkish": "Biraz köz taşımak için kullanılabilecek kömürlü küçük bir kutu."
 	},
 	"GAMEPLAY_ActiveEmberBox": {
 		"English": "Smoldering Ember Box",
@@ -27,7 +29,8 @@
 		"Polish": "Rozrzażone pudełko",
 		"Italian": "Scatola per tizzoni fumante",
 		"Japanese": "くすぶっている種火入れ",
-		"Simplified Chinese": "余烬罐"
+		"Simplified Chinese": "余烬罐",
+		"Turkish": "İçin için yanan Kor Kutusu"
 	},
 	"GAMEPLAY_ActiveEmberBoxDescription": {
 		"English": "A little can with some smoldering charcoal.",
@@ -37,7 +40,8 @@
 		"Polish": "Mała puszka z rozżarzonym węglem drzewnym",
 		"Italian": "Una lattina contenente dei tizzoni bollenti.",
 		"Japanese": "種火がくすぶっている小さい缶。",
-		"Simplified Chinese": "带有余烬的余烬罐。"
+		"Simplified Chinese": "带有余烬的余烬罐。",
+		"Turkish": "İçinde kömür olan ve için için yanan küçük bir kutu."
 	},
 	"GAMEPLAY_BowDrill": {
 		"English": "Bow Drill",
@@ -46,7 +50,8 @@
 		"Polish": "Łuk ogniowy",
 		"Italian": "Trapano ad arco",
 		"Japanese": "弓錐",
-		"Simplified Chinese": "弓钻"
+		"Simplified Chinese": "弓钻",
+		"Turkish": "Yaylı Matkap"
 	},
 	"GAMEPLAY_BowDrillDescription": {
 		"English": "An ancient way of making fire.",
@@ -55,7 +60,8 @@
 		"Polish": "Starożytny sposób rozpalania ognia",
 		"Italian": "Un metodo antico per accendere il fuoco.",
 		"Japanese": "古来からの火おこし方法。",
-		"Simplified Chinese": "钻木取火，古代人类才会用的方法。"
+		"Simplified Chinese": "钻木取火，古代人类才会用的方法。",
+		"Turkish": "Ateş yakmanın eski bir yolu."
 	},
 	"GAMEPLAY_TakeEmbers": {
 		"English": "Take Embers",
@@ -65,6 +71,7 @@
 		"Polish": "Weź żar",
 		"Italian": "Prendi tizzoni",
 		"Japanese": "種火を取る",
-		"Simplified Chinese": "取余烬"
+		"Simplified Chinese": "取余烬",
+		"Turkish": "Köz al"
 	}
 }
