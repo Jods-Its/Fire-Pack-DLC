@@ -1,70 +1,87 @@
 {
 	"GAMEPLAY_EmberBox": {
 		"English": "Ember Box",
-		"Spanish (Spain)" : "Caja de brasas",
+		"Spanish (Spain)": "Caja de brasas",
 		"German": "Glutbüchse",
 		"Russian": "Емкость для углей",
 		"Polish": "Pudełko na żar",
 		"Italian": "Scatola per tizzoni",
 		"Japanese": "種火入れ",
-		"Simplified Chinese": "余烬罐"
+		"Simplified Chinese": "余烬罐",
+		"Turkish": "Ateş Koru Kutusu"
 	},
 	"GAMEPLAY_EmberBoxDescription": {
 		"English": "A little can with charcoal that can be used to carry some embers.",
-		"Spanish (Spain)" : "Una pequeña lata con carboncillo que puede usarse para transportar ascuas.",
+		"Spanish (Spain)": "Una pequeña lata con carboncillo que puede usarse para transportar ascuas.",
 		"German": "Eine kleine Büchse mit Holzkohle, mit der man Glut transportieren kann.",
 		"Russian": "Маленькая банка с древесным углем, в которой можно переносить угли.",
 		"Polish": "Mała puszka na węgiel drzewny, którą możesz użyć by transportować żar",
 		"Italian": "Una lattina contenente carbone che puo' essere usata per trasportare dei tizzoni.",
 		"Japanese": "種火を持ち運ぶために使える木炭入の小さい缶。",
-		"Simplified Chinese": "一个装有木炭的小罐子，可以用来装一些余烬。"
+		"Simplified Chinese": "一个装有木炭的小罐子，可以用来装一些余烬。",
+		"Turkish": "Biraz köz taşımak için kullanılabilecek kömürlü küçük bir kutu."
 	},
 	"GAMEPLAY_ActiveEmberBox": {
 		"English": "Smoldering Ember Box",
-		"Spanish (Spain)" : "Caja de brasas ardientes",
+		"Spanish (Spain)": "Caja de brasas ardientes",
 		"German": "Glimmende Glutbüchse",
 		"Russian": "Банка тлеющих углей",
 		"Polish": "Rozrzażone pudełko",
 		"Italian": "Scatola per tizzoni fumante",
 		"Japanese": "くすぶっている種火入れ",
-		"Simplified Chinese": "余烬罐"
+		"Simplified Chinese": "余烬罐",
+		"Turkish": "İçin için yanan Kor Kutusu"
 	},
 	"GAMEPLAY_ActiveEmberBoxDescription": {
 		"English": "A little can with some smoldering charcoal.",
-		"Spanish (Spain)" : "Una pequeña lata con algo de carboncillo ardiente.",
+		"Spanish (Spain)": "Una pequeña lata con algo de carboncillo ardiente.",
 		"German": "Eine kleine Büchse mit etwas glimmender Holzkohle.",
 		"Russian": "Банка с тлеющими углями.",
 		"Polish": "Mała puszka z rozżarzonym węglem drzewnym",
 		"Italian": "Una lattina contenente dei tizzoni bollenti.",
 		"Japanese": "種火がくすぶっている小さい缶。",
-		"Simplified Chinese": "带有余烬的余烬罐。"
+		"Simplified Chinese": "带有余烬的余烬罐。",
+		"Turkish": "İçinde kömür olan ve için için yanan küçük bir kutu."
 	},
 	"GAMEPLAY_BowDrill": {
 		"English": "Bow Drill",
-		"Spanish (Spain)" : "Taladro de arco",
+		"Spanish (Spain)": "Taladro de arco",
 		"Russian": "Комплект для разведения огня трением",
 		"Polish": "Łuk ogniowy",
 		"Italian": "Trapano ad arco",
 		"Japanese": "弓錐",
-		"Simplified Chinese": "弓钻"
+		"Simplified Chinese": "弓钻",
+		"Turkish": "Yaylı Matkap"
 	},
 	"GAMEPLAY_BowDrillDescription": {
 		"English": "An ancient way of making fire.",
-		"Spanish (Spain)" : "Una forma antigua de hacer fuego.",
+		"Spanish (Spain)": "Una forma antigua de hacer fuego.",
 		"Russian": "Доисторический метод разведения огня.",
 		"Polish": "Starożytny sposób rozpalania ognia",
 		"Italian": "Un metodo antico per accendere il fuoco.",
 		"Japanese": "古来からの火おこし方法。",
-		"Simplified Chinese": "钻木取火，古代人类才会用的方法。"
+		"Simplified Chinese": "钻木取火，古代人类才会用的方法。",
+		"Turkish": "Ateş yakmanın eski bir yolu."
+	},
+	"GAMEPLAY_FlintNSteel": {
+		"English": "Improvised striker",
+		"Spanish (Spain)": "Mechero improvisado",
+		"Turkish": "Doğaçlama ateşleyici"
+	},
+	"GAMEPLAY_FlintNSteelDescription": {
+		"English": "A piece of scrap metal and a chunk of flint. One of the oldest way to start fires.",
+		"Spanish (Spain)": "Una pieza de chatarra y un trozo de pedernal. Una de las formas más antiguas de hacer fuego.",
+		"Turkish": "Bir parça hurda metal ve bir parça çakmaktaşı. Ateş yakmanın en eski yollarından biri."
 	},
 	"GAMEPLAY_TakeEmbers": {
 		"English": "Take Embers",
-		"Spanish (Spain)" : "Coger ascuas",
+		"Spanish (Spain)": "Coger ascuas",
 		"German": "Glut nehmen",
 		"Russian": "Взять угли",
 		"Polish": "Weź żar",
 		"Italian": "Prendi tizzoni",
 		"Japanese": "種火を取る",
-		"Simplified Chinese": "取余烬"
+		"Simplified Chinese": "取余烬",
+		"Turkish": "Köz al"
 	}
 }
