@@ -66,11 +66,13 @@
 	"GAMEPLAY_FlintNSteel": {
 		"English": "Improvised striker",
 		"Spanish (Spain)": "Mechero improvisado",
+		"Russian": "Импровизированное огниво",
 		"Turkish": "Doğaçlama ateşleyici"
 	},
 	"GAMEPLAY_FlintNSteelDescription": {
 		"English": "A piece of scrap metal and a chunk of flint. One of the oldest way to start fires.",
 		"Spanish (Spain)": "Una pieza de chatarra y un trozo de pedernal. Una de las formas más antiguas de hacer fuego.",
+		"Russian": "Металл и кусочек кремния. Один из древнейших способов разведения огня.",
 		"Turkish": "Bir parça hurda metal ve bir parça çakmaktaşı. Ateş yakmanın en eski yollarından biri."
 	},
 	"GAMEPLAY_TakeEmbers": {
