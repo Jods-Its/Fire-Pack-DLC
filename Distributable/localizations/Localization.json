@@ -1,7 +1,7 @@
 {
 	"GAMEPLAY_EmberBox": {
 		"English": "Ember Box",
-		"Spanish (Spain)" : "Caja de brasas",
+		"Spanish (Spain)": "Caja de brasas",
 		"German": "Glutbüchse",
 		"Russian": "Емкость для углей",
 		"Polish": "Pudełko na żar",
@@ -12,7 +12,7 @@
 	},
 	"GAMEPLAY_EmberBoxDescription": {
 		"English": "A little can with charcoal that can be used to carry some embers.",
-		"Spanish (Spain)" : "Una pequeña lata con carboncillo que puede usarse para transportar ascuas.",
+		"Spanish (Spain)": "Una pequeña lata con carboncillo que puede usarse para transportar ascuas.",
 		"German": "Eine kleine Büchse mit Holzkohle, mit der man Glut transportieren kann.",
 		"Russian": "Маленькая банка с древесным углем, в которой можно переносить угли.",
 		"Polish": "Mała puszka na węgiel drzewny, którą możesz użyć by transportować żar",
@@ -23,7 +23,7 @@
 	},
 	"GAMEPLAY_ActiveEmberBox": {
 		"English": "Smoldering Ember Box",
-		"Spanish (Spain)" : "Caja de brasas ardientes",
+		"Spanish (Spain)": "Caja de brasas ardientes",
 		"German": "Glimmende Glutbüchse",
 		"Russian": "Банка тлеющих углей",
 		"Polish": "Rozrzażone pudełko",
@@ -34,7 +34,7 @@
 	},
 	"GAMEPLAY_ActiveEmberBoxDescription": {
 		"English": "A little can with some smoldering charcoal.",
-		"Spanish (Spain)" : "Una pequeña lata con algo de carboncillo ardiente.",
+		"Spanish (Spain)": "Una pequeña lata con algo de carboncillo ardiente.",
 		"German": "Eine kleine Büchse mit etwas glimmender Holzkohle.",
 		"Russian": "Банка с тлеющими углями.",
 		"Polish": "Mała puszka z rozżarzonym węglem drzewnym",
@@ -45,7 +45,7 @@
 	},
 	"GAMEPLAY_BowDrill": {
 		"English": "Bow Drill",
-		"Spanish (Spain)" : "Taladro de arco",
+		"Spanish (Spain)": "Taladro de arco",
 		"Russian": "Комплект для разведения огня трением",
 		"Polish": "Łuk ogniowy",
 		"Italian": "Trapano ad arco",
@@ -55,7 +55,7 @@
 	},
 	"GAMEPLAY_BowDrillDescription": {
 		"English": "An ancient way of making fire.",
-		"Spanish (Spain)" : "Una forma antigua de hacer fuego.",
+		"Spanish (Spain)": "Una forma antigua de hacer fuego.",
 		"Russian": "Доисторический метод разведения огня.",
 		"Polish": "Starożytny sposób rozpalania ognia",
 		"Italian": "Un metodo antico per accendere il fuoco.",
@@ -63,9 +63,19 @@
 		"Simplified Chinese": "钻木取火，古代人类才会用的方法。",
 		"Turkish": "Ateş yakmanın eski bir yolu."
 	},
+	"GAMEPLAY_FlintNSteel": {
+		"English": "Improvised striker",
+		"Spanish (Spain)": "Mechero improvisado",
+		"Turkish": "Doğaçlama ateşleyici"
+	},
+	"GAMEPLAY_FlintNSteelDescription": {
+		"English": "A piece of scrap metal and a chunk of flint. One of the oldest way to start fires.",
+		"Spanish (Spain)": "Una pieza de chatarra y un trozo de pedernal. Una de las formas más antiguas de hacer fuego.",
+		"Turkish": "Bir parça hurda metal ve bir parça çakmaktaşı. Ateş yakmanın en eski yollarından biri."
+	},
 	"GAMEPLAY_TakeEmbers": {
 		"English": "Take Embers",
-		"Spanish (Spain)" : "Coger ascuas",
+		"Spanish (Spain)": "Coger ascuas",
 		"German": "Glut nehmen",
 		"Russian": "Взять угли",
 		"Polish": "Weź żar",
