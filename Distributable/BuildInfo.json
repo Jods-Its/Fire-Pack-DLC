@@ -1,5 +1,6 @@
 {
     "Name" : "Fire Pack",
-    "Version" : "2.6.0",
-	"Author" : "WulfMarius, ds5678, Jods-Its"
+    "Version" : "2.7.1",
+	"Author" : "WulfMarius, ds5678, Jods-Its",
+	"Requires":["AHandyToolbox"]
 }

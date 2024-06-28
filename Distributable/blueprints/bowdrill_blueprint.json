@@ -1,6 +1,6 @@
 {
     "Name": "Bow Drill",
-    "RequiredGear": [{"Item": "GEAR_Hardwood", "Count": 1},{"Item": "GEAR_GutDried", "Count": 1}, {"Item": "GEAR_Stick", "Count": 3}],
+    "RequiredGear": [{"Item": "GEAR_Hardwood", "Count": 1},{"Item": "GEAR_StringDurable", "Count": 1}, {"Item": "GEAR_Stick", "Count": 3}],
     "KeroseneLitersRequired": 0,
     "GunpowderKGRequired": 0,
     "RequiredTool": "",
