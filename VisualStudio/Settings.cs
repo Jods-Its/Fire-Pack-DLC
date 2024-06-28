@@ -6,6 +6,7 @@ namespace FirePack
     {
         internal static Settings instance = new Settings();
 
+        [Section("Difficulty Settings")]
         [Name("Pull Torches From Fire")]
         [Description("Let you get torches from fires. Default = Yes")]
         public bool pullTorches = true;
@@ -17,5 +18,6 @@ namespace FirePack
         [Name("No Wood Matches Anywhere (Challenge)")]
         [Description("The player starts with a set of pack matches and cannot obtain any wood matches again. After the pack matches are consumed, the player must use renewable firestarting tools. Warning: turning this on will delete your wood matches. Default = No")]
         public bool noWoodMatches = false;
+
     }
 }

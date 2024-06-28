@@ -1,6 +1,4 @@
 ﻿using Il2Cpp;
-using Il2CppInterop.Runtime.InteropTypes.Arrays;
-using Il2CppRewired;
 using Il2CppTLD.UI;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
@@ -11,13 +9,11 @@ namespace FirePack
     {
         public static GearItem matches = Addressables.LoadAssetAsync<GameObject>("GEAR_PackMatches").WaitForCompletion().GetComponent<GearItem>();
         public static GearItem activeEmberBox = Addressables.LoadAssetAsync<GameObject>("GEAR_ActiveEmberBox").WaitForCompletion().GetComponent<GearItem>();
-		public static Fire LastInteractedFire = null;
 
-		public static GameObject GetPlayer()
+        public static GameObject GetPlayer()
 		{
-			return GameManager.GetPlayerObject();
+			return GameManager.GetPlayerObject(); 
         }
-
         internal static bool HasEmberBox()
 		{
 			GearItem emberBox = GameManager.GetInventoryComponent().GetBestGearItemWithName("GEAR_EmberBox");
@@ -34,21 +30,18 @@ namespace FirePack
 			else return false;
 		}
 
-		internal static void TakeEmbers(Fire Fire)
+		internal static void TakeEmbers()
 		{
-			// If we got nothing here, trying to grab from last interacted.
-			if(Fire == null && LastInteractedFire != null)
+			/*
+			if (fire != null)
 			{
-				Fire = LastInteractedFire;
-            }
-
-			if(Fire != null)
-			{
-                if (!Fire.m_IsPerpetual)
+                if (!fire.m_IsPerpetual)
                 {
-                    Fire.ReduceHeatByDegrees(1);
+                    fire.ReduceHeatByDegrees(1);
+					fire.ReduceDurationByTODSeconds(5);
                 }
-			}
+            }
+			*/
 			GearItem emberBox = GameManager.GetInventoryComponent().GetBestGearItemWithName("GEAR_EmberBox");
 			if (emberBox == null)
 			{
@@ -60,16 +53,17 @@ namespace FirePack
 			GameManager.GetInventoryComponent().DestroyGear(emberBox.gameObject);
 			GearItem _activeEmberBox = GameManager.GetPlayerManagerComponent().InstantiateItemInPlayerInventory(activeEmberBox, 1);
             GearMessage.AddMessage(_activeEmberBox, Localization.Get("GAMEPLAY_Harvested"), _activeEmberBox.DisplayName, false);
-			GameObject Player = GetPlayer();
-			if(Player != null)
+
+			GameObject player = GetPlayer();
+			if (player != null)
 			{
-                GameAudioManager.PlaySound("Play_SndInvStoneSmall", Player);
-                GameAudioManager.PlaySound("Play_MatchBurnOut", Player);
-                GameAudioManager.PlaySound("Play_TinCanPutDown", Player);
+                GameAudioManager.PlaySound("Play_SndInvStoneSmall", player);
+                GameAudioManager.PlaySound("Play_MatchBurnOut", player);
+                GameAudioManager.PlaySound("Play_TinCanPutDown", player);
             }
 
 			InterfaceManager.GetPanel<Panel_FeedFire>().ExitFeedFireInterface();
-        }
+		}
 
 		internal static System.Collections.Generic.List<T> Convert<T>(Il2CppSystem.Collections.Generic.List<T> list)
 		{
@@ -81,7 +75,7 @@ namespace FirePack
 			return result;
 		}
 
-        internal static Il2CppSystem.Collections.Generic.List<T> Convert<T>(System.Collections.Generic.List<T> list)
+		internal static Il2CppSystem.Collections.Generic.List<T> Convert<T>(System.Collections.Generic.List<T> list)
 		{
 			Il2CppSystem.Collections.Generic.List<T> result = new Il2CppSystem.Collections.Generic.List<T>(list.Count);
 			foreach (var element in list)

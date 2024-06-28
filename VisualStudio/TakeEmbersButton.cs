@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using HarmonyLib;
 using Il2Cpp;
-using static Il2CppAK.SWITCHES;
 
 namespace FirePack
 {
@@ -9,6 +8,8 @@ namespace FirePack
     {
         internal static string embersText;
         private static GameObject embersButton;
+
+        internal static System.Action GetActionDelegate() => new System.Action(OnTakingEmbers);
 
         internal static void Initialize(Panel_FeedFire panel_FeedFire)
         {
@@ -19,10 +20,7 @@ namespace FirePack
             embersButton = GameObject.Instantiate<GameObject>(panel_FeedFire.m_ActionButtonObject, panel_FeedFire.m_ActionButtonObject.transform.parent, true);
             embersButton.transform.Translate(0, 0.09f, 0);
             Utils.GetComponentInChildren<UILabel>(embersButton).text = embersText;
-
-            // Pass null there, because will try to get from last interacted.
-            Action act = new Action(() => FireUtils.TakeEmbers(null));
-            AddAction(embersButton, act);
+            AddAction(embersButton, new System.Action(OnTakingEmbers));
 
             NGUITools.SetActive(embersButton, true);
         }
@@ -35,6 +33,11 @@ namespace FirePack
         internal static void SetActive(bool active)
         {
             NGUITools.SetActive(embersButton, active);
+        }
+        internal static void OnTakingEmbers()
+        {
+            //Fire thisFire = InterfaceManager.GetPanel<Panel_FeedFire>().GetComponentInChildren<Fire>();
+            FireUtils.TakeEmbers();
         }
     }
 
